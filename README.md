@@ -1,1 +1,1 @@
-Very simply BMI calculator in python
+Very simple BMI calculator in python
