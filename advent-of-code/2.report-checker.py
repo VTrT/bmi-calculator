@@ -70,7 +70,5 @@ reports_list = [
     [8, 6, 4, 4, 1],
     [1, 3, 6, 7, 9]
 ]
-
 validated_reports_list = check_reports(reports_list)
-
 pretty_report(validated_reports_list)
