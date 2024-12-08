@@ -30,7 +30,6 @@ def validate_report(report):
             if not 1 <= measure - report[i] <= 3:
                 return False
             i = i + 1
-
     elif report[0] < report[1]:
         i = 1
         for measure in report:
@@ -43,7 +42,6 @@ def validate_report(report):
             i = i + 1
     else:
         return False
-
     return True
 
 
