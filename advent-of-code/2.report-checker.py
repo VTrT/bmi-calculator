@@ -64,6 +64,12 @@ def check_reports(list_reports):
     return check_results
 
 
-print(check_reports(reports_list))
+def pretty_report(list_reports):
+    for report in list_reports:
+        print(f"{report['Report']} - {report["Validation"]}")
+
+
+validated_reports_list = check_reports(reports_list)
+pretty_report(validated_reports_list)
 
 
