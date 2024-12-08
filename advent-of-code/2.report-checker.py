@@ -17,6 +17,7 @@ The levels are either all increasing or all decreasing.
 Any two adjacent levels differ by at least one and at most three.
 """
 
+
 def validate_report(report):
     if report[0] > report[1]:
         i = 1
