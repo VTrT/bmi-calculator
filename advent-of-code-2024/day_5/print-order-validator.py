@@ -24,14 +24,12 @@ def validate_task(rules_list_, print_task_):
 
 
 def fix_task(rules_list_, print_task_: list, iteration=0):
-    if isinstance(iteration, int) and iteration > len(print_task_):
+    if iteration > len(print_task_):
         return None
     for rule in rules_list_:
         if rule[0] in print_task_ and rule[1] in print_task_:
             if print_task_.index(rule[0]) > print_task_.index(rule[1]):
-                moved_item = print_task_.pop(
-                    print_task_.index(rule[1])
-                )
+                moved_item = print_task_.pop(print_task_.index(rule[1]))
                 print_task_.append(moved_item)
                 fix_task(rules_list_, print_task_, iteration=iteration + 1)
     return print_task_
